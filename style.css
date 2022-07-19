@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* ----------------
+    Header Style 
+------------------- */
+header{
+   display: flex;
+   background-color: black;
+   margin: 40px 150px;
+   padding: 30px 100px 0px 130px;
+   border: none;
+   border-radius: 10px;
+   
+}
+header h1{
+    padding-top: 80px;
+    font-size: 90px;
+    color: white;
+    width: 600px;
+}
+header p{
+    margin-top: 30px;
+    color: white;
+    width: 600px;
+}
+.cover-button{
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    background-color: red;
+    color: white;
+    
+}
+
+.cover-image img{
+    margin-left: px;
+    width: 500px;
+}
+
+/* --------------
+    Main Style 
+----------------- */
+main{
+    margin: 150px 150px;
+}
+.menu{
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    width: 300px;
+    background-color: black;
+    padding: 30px;
+}
+.menu li{
+    list-style: none;
+    text-align: center;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    
+}
+.upcomming-match{
+    margin-bottom: 30px;
+    border:none;
+    border-radius: 10px;
+    padding:15px 15px ;
+    background-color: white;
+}
+.all-group{
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 15px;
+    background-color: white;
+}
+.menu-blog{
+    border: none;
+    border-radius: 10px;
+    padding: 15px 15px;
+    background-color:red;
+    
+}
+.menu-blog a{
+    color: white;
+}
+/*--------------- 
+    Blog style 
+----------------- */
+.comments{
+    margin-left: 15px;
+}
