@@ -6,6 +6,7 @@
 
 body {
     margin-top: 40px;
+    background-color: rgba(224, 255, 255, 0.411);
 }
 
 /* ----------------
@@ -47,19 +48,19 @@ header p {
     margin-top: 50px;
     padding: 20px 30px;
     font-size: 25px;
-    background-color: red;
+    background-color:#00BFFF;
     color: white;
+    transition: transform 1s;
 
 }
-
-.cover-image {
-    width: 30%;
-    margin-right: 100px;
+.cover-button:hover {
+    transform: scale(1.1);
+    color: navy;
+}
+.cover-image img{
+    width: 25vw;
 }
 
-.cover-image img {
-    width: 500px;
-}
 
 /* --------------
     Main Style 
@@ -81,9 +82,10 @@ main {
 .menu li {
     list-style: none;
     text-align: center;
-
 }
-
+.menu li a:hover{
+    color: red;
+}
 .menu a {
     text-decoration: none;
     font-size: 25px;
@@ -96,7 +98,7 @@ main {
     border: none;
     border-radius: 10px;
     padding: 15px 15px;
-    background-color: red;
+    background-color: #00BFFF;
 }
 .upcomming-match a{
     color: white;
@@ -141,6 +143,9 @@ main {
 .match-box img{
     width: 130px;
 }
+.match-box{
+    background-color: white;
+}
 .match{
     display: flex;
     align-items: center;
@@ -182,5 +187,268 @@ footer ul {
 footer a {
     text-decoration: none;
     margin-right: 60px;
-    color: lightgray;
+    color: #00BFFF;
+}
+.social-icon a {
+    font-size: 30px;
+    color: white;
+    margin: 20px;
+
+}
+
+.fa-facebook {
+    color: #29487d
+}
+
+.fa-instagram {
+    color: #C13584;
+}
+
+.fa-google {
+    color: #0F9D58;
+}
+/*-----------------------------------
+    Responsive Layout Style For Mobile 
+------------------------------------- */
+@media only screen and (max-width: 576px) {
+
+    /*---------------------
+        Header Responsive 
+    ----------------------- */
+    header {
+        width: 90vw;
+    }
+
+    header p {
+        text-overflow: ellipsis;
+        width: 100px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    header p:hover {
+        overflow: visible;
+    }
+
+    .cover {
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        align-items: center;
+        margin: auto;
+
+    }
+
+    .cover-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cover-button {
+        padding: 10px;
+        width: 150px;
+        font-size: 18px;
+    }
+
+    .title {
+        width: 100%;
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cover-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cover-image img {
+        margin-left: 100px;
+        margin-top: 30px;
+        width: 60vw;
+    }
+
+    .upcomming-match-container{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    /*--------------------
+         Menu Responsive 
+    ---------------------- */
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .menu {
+        background-color: white;
+
+
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        border: 1px solid lightgray;
+    }
+
+    .all-group {
+        width: 60%;
+    }
+
+    .menu-blog {
+        width: 60%;
+    }
+
+    /*-------------------------------
+        Blogs Container Responsive 
+    --------------------------------- */
+    .blogs-container {
+        margin: 0;
+    }
+
+    /* -----------------
+        View All Button 
+    -------------------- */
+    .view-all {
+        display: none;
+    }
+
+    /*--------------------
+        Footer Responsive 
+    ---------------------- */
+    footer {
+        padding: 30px 150px;
+    }
+
+    .footer-list ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .footer-list li {
+        margin-top: 40px;
+
+    }
+
+    .footer-list a {
+        height: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+/* ---------------------------------
+    Responsive Layout Style for Tablet 
+------------------------------------ */
+@media only screen and (min-width:577px) and (max-width:992px) {
+    header {
+        width: 90vw;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 5vw;
+        width: 80%;
+        padding: 0;
+    }
+
+    .tag {
+        width: 100%;
+    }
+
+    .cover {
+        padding: 30px 50px 0px 50px;
+    }
+
+    .cover-image img {
+        width: 25vw;
+
+    }
+
+    .cover-button {
+        font-size: 1.15em;
+        padding: .75em 1.5em
+    }
+
+    /*---------------------
+         Main Responsive
+    ----------------------- */
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+
+    }
+
+    .menu {
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        background-color: white;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li {
+        width: 28%;
+        border: 1px solid lightgray;
+        margin: 0 10px;
+        padding: 15px 0;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    .menu-blog a {
+        padding: 0;
+    }
+
+    .view-all-button {
+        display: block;
+        margin: auto;
+    }
+
+    /* ---------------------------------
+        Blog Container Responsive Style 
+    ------------------------------------- */
+    .upcomming-match-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 90px;
+        justify-items: center;
+        margin: auto;
+
+    }
+
+    .footer-list ul {
+        flex-wrap: wrap;
+        line-height: 50px;
+
+
+    }
 }
