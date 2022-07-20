@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -7,36 +7,41 @@
 body {
     margin-top: 40px;
 }
+
 /* ----------------
     Header Style 
 ------------------- */
 
-header{
+header {
     width: 87%;
     margin: auto;
 }
-.cover{
-   display: flex;
-   justify-content: center;
-   background-color: black;
-   margin-bottom: 100px;
-   padding: 30px 100px 0px 130px;
-   border: none;
-   border-radius: 15px;
-   
+
+.cover {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 100px;
+    padding: 30px 100px 0px 130px;
+    border: none;
+    border-radius: 15px;
+
 }
-header h1{
+
+header h1 {
     padding-top: 80px;
     font-size: 90px;
     color: white;
     width: 70%;
 }
-header p{
+
+header p {
     margin-top: 30px;
     color: white;
     width: 50%;
 }
-.cover-button{
+
+.cover-button {
     border: none;
     border-radius: 5px;
     margin-top: 50px;
@@ -44,150 +49,137 @@ header p{
     font-size: 25px;
     background-color: red;
     color: white;
-    
+
 }
-.cover-image{
+
+.cover-image {
     width: 30%;
     margin-right: 100px;
 }
 
-.cover-image img{
+.cover-image img {
     width: 500px;
 }
 
 /* --------------
     Main Style 
 ----------------- */
-main{
+main {
     display: flex;
     justify-content: center;
 }
-.menu{
+
+.menu {
     padding: 30px;
     background-color: black;
     width: 300px;
     height: 240px;
-    border:none;
+    border: none;
     border-radius: 15px;
 }
 
-.menu li{
+.menu li {
     list-style: none;
-    text-align: center;  
-    
+    text-align: center;
+
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     font-size: 25px;
     color: black;
 
 }
-.upcomming-match{
+
+.upcomming-match {
     margin-bottom: 30px;
-    border:none;
+    border: none;
     border-radius: 10px;
     padding: 15px 15px;
-    background-color: white;
+    background-color: red;
 }
-.all-group{
+.upcomming-match a{
+    color: white;
+}
+
+.all-group {
     margin-bottom: 30px;
     border: none;
     border-radius: 10px;
     padding: 15px 15px;
     background-color: white;
 }
-.menu-blog{
+
+.menu-blog {
 
     border: none;
     border-radius: 10px;
     padding: 15px 15px;
-    background-color:red;
-    
+    background-color:white;
+
 }
-.menu-blog a{
-    color: white;
-}
-/*--------------- 
-    Blog style 
------------------ */
-.blogs-container{
-    margin-left: 25px;
+
+/* ----------------------------
+    Upcomming Match Style 
+------------------------------- */
+.upcomming-match-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    
-    
-}
-.blog{
-    border: 1px solid lightgray;
-    border-radius: 15px;
-}
-.blog img{
-    width: 400px;
-}
-
-.blog-button{
-    margin-top: 20px;
-    margin-left: 20px;
-    border: 2px solid gray;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 18px;
-    color: black;
-    background-color: white;
-}
-.blog-title{
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 280px;
-}
-.blog-duration-comment{
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 30px;
-}
-.fa-comment-dots{
     margin-left: 30px;
 }
-
-.view-all{
-    align-items: center;
+.match-box{
+    
+    padding: 50px 30px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    
+}
+.match-box h3, p{
     text-align: center;
 }
-.view-all-button{
-    border: none;
-    border-radius: 5px;
-    margin-top: 50px;
-    padding: 20px 30px;
-    font-size: 25px;
-    background-color: red;
-    color: white;
+.match-box img{
+    width: 130px;
+}
+.match{
+    display: flex;
+    align-items: center;
+}
+.flag-left{
+    padding: 15px;
+}
+.flag-right{
+    padding: 15px;
 }
 /*------------------
      Footer Style 
 -------------------- */
-footer{
+footer {
     margin-top: 100px;
     padding: 150px;
     background-color: black;
 }
-.footer-title{
+
+.footer-title {
     color: white;
     text-align: center;
     font-size: 40px;
 }
-.h-line{
+
+.h-line {
     margin-top: 40px;
-    border:1px solid gray;
+    border: 1px solid gray;
 }
-footer ul{
+
+footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top:40px;
-    
+    margin-top: 40px;
+
 }
-footer a{
+
+footer a {
     text-decoration: none;
     margin-right: 60px;
     color: lightgray;
