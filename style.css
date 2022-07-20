@@ -27,7 +27,7 @@ header{
 }
 header h1{
     padding-top: 80px;
-    font-size: 90px;
+    font-size: 4vw;
     color: white;
     width: 70%;
 }
@@ -47,12 +47,12 @@ header p{
     
 }
 .cover-image{
-    width: 30%;
+    width: 25vw;
     margin-right: 100px;
 }
 
 .cover-image img{
-    width: 500px;
+    width:25vw ;
 }
 
 /* --------------
@@ -155,6 +155,7 @@ main{
     text-align: center;
 }
 .view-all-button{
+    display: none;
     border: none;
     border-radius: 5px;
     margin-top: 50px;
@@ -187,6 +188,12 @@ footer ul{
     margin-top:40px;
     
 }
+.footer-list ul {
+    flex-wrap: wrap;
+    line-height: 50px;
+
+
+}
 footer a{
     text-decoration: none;
     margin-right: 60px;
@@ -194,7 +201,7 @@ footer a{
 }
 
 /*-----------------------------------
-    Media Queries Style For Mobile 
+    Responsive Layout Style For Mobile 
 ------------------------------------- */
 @media only screen and (max-width: 576px) {
     /*---------------------
@@ -202,6 +209,16 @@ footer a{
     ----------------------- */
     header{
         width: 90vw;
+    }
+    header p {
+            text-overflow: ellipsis;
+            width: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+    }
+    
+    header p:hover {
+            overflow: visible;
     }
     .cover{
         display: flex;
@@ -245,16 +262,7 @@ footer a{
     grid-template-columns: repeat(1, 1fr);
 
     }
-    header p{
-        text-overflow: ellipsis;
-        width: 100px;        
-        overflow: hidden;
-        white-space: nowrap;
-    }
-    header p:hover{
-        overflow: visible;
-    }
-
+    
     /*--------------------
          Menu Responsive 
     ---------------------- */
@@ -320,4 +328,92 @@ footer a{
         margin: 0;
     }
     
+}
+
+
+/* ---------------------------------
+    Responsive Layout Style for Tablet 
+------------------------------------ */
+@media only screen and (min-width:577px) and (max-width:992px){
+    header {
+            width: 90vw;
+            align-items: center;
+        }
+    .title{
+        font-size: 5vw;
+        width: 80%;
+        padding: 0;
+    }
+    .tag{
+        width: 100%;
+    }
+    .cover{
+        padding: 30px 50px 0px 50px;
+    }
+    .cover-image img{
+        width:30vw;
+       
+    }
+        .cover-button{
+            font-size: 1.15em;
+            padding: .75em 1.5em
+        }
+    
+    /*---------------------
+         Main Responsive
+    ----------------------- */
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        
+    }
+    .menu{
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        background-color: white;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .menu ul{
+        display: flex;
+        justify-content:center;
+        align-items: center;   
+    }
+    .menu li{
+        width: 28%;
+        border: 1px solid lightgray;
+        margin: 0 10px;
+        padding:15px 0;
+    }
+    .menu a{
+        text-align: center;
+    }
+    .menu-blog a{
+        padding: 0;
+    }
+    .view-all-button{
+        display: block;
+        margin: auto;
+    }
+
+    /* ---------------------------------
+        Blog Container Responsive Style 
+    ------------------------------------- */
+    .blogs-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap:90px;
+        justify-items: center;
+        margin: auto;
+        
+    }
+    
+    .footer-list ul{
+        flex-wrap: wrap;
+        line-height: 50px;
+        
+
+    }
 }
