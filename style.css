@@ -238,7 +238,7 @@ footer a{
 /*-----------------------------------
     Responsive Layout Style For Mobile 
 ------------------------------------- */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) {
     /*---------------------
         Header Responsive 
     ----------------------- */
@@ -376,7 +376,7 @@ footer a{
 /* ---------------------------------
     Responsive Layout Style for Tablet 
 ------------------------------------ */
-@media only screen and (min-width:577px) and (max-width:992px){
+@media only screen and (min-width:778px) and (max-width:1023px){
     header {
             width: 90vw;
             align-items: center;
@@ -449,6 +449,7 @@ footer a{
         grid-column-gap:90px;
         justify-items: center;
         margin: auto;
+        
         
     }
     
