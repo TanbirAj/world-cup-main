@@ -178,6 +178,7 @@ main{
      Footer Style 
 -------------------- */
 footer{
+    position: relative;
     margin-top: 100px;
     padding: 150px;
     background-color: black;
@@ -197,6 +198,7 @@ footer ul{
     justify-content: center;
     margin-top:40px;
     
+    
 }
 .footer-list ul {
     flex-wrap: wrap;
@@ -209,14 +211,23 @@ footer a{
     margin-right: 60px;
     color: #00BFFF;
 }
+.social-icon {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
 .social-icon a{
+   
     font-size: 30px;
     color: white;
-    margin: 20px;
+    margin-right: 20px ;
+    
+
     
 }
 .fa-facebook{
     color:#29487d
+
 }
 .fa-instagram{
     color: #C13584;
@@ -334,7 +345,9 @@ footer a{
         Footer Responsive 
     ---------------------- */
     footer{
-        padding: 30px 150px;
+        padding: 30px 150px 150px 150px;
+        
+
     }
     .footer-list  ul{
         display: flex;
@@ -343,13 +356,18 @@ footer a{
         margin: 0px; 
     }
     .footer-list li{
-        margin-top: 40px;
+        margin-top: 25px;
         
     }
     .footer-list a{
         height: 10px;
         padding:0;
         margin: 0;
+    }
+    .social-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content:left;
     }
     
 }
