@@ -160,6 +160,7 @@ main {
      Footer Style 
 -------------------- */
 footer {
+    position: relative;
     margin-top: 100px;
     padding: 150px;
     background-color: black;
@@ -189,10 +190,17 @@ footer a {
     margin-right: 60px;
     color: #00BFFF;
 }
+.social-icon {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+
 .social-icon a {
+
     font-size: 30px;
     color: white;
-    margin: 20px;
+    margin-right: 20px;
 
 }
 
@@ -210,7 +218,7 @@ footer a {
 /*-----------------------------------
     Responsive Layout Style For Mobile 
 ------------------------------------- */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) {
 
     /*---------------------
         Header Responsive 
@@ -332,7 +340,8 @@ footer a {
         Footer Responsive 
     ---------------------- */
     footer {
-        padding: 30px 150px;
+        padding: 30px 150px 150px 150px;
+        
     }
 
     .footer-list ul {
@@ -352,13 +361,17 @@ footer a {
         padding: 0;
         margin: 0;
     }
-
+    .social-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
 }
 
 /* ---------------------------------
     Responsive Layout Style for Tablet 
 ------------------------------------ */
-@media only screen and (min-width:577px) and (max-width:992px) {
+@media only screen and (min-width:768px) and (max-width:1023px) {
     header {
         width: 90vw;
         align-items: center;
